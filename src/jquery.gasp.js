@@ -33,22 +33,22 @@
         return promise;
     };
 })(jQuery);
-;(function ($, undefined) {
+;(function ($) {
     var defaults = {
-        breathTime: 0
-    };
+		breathTime: 0
+	};
 
-    $.fn.gasp = function (func, options) {
-        options = $.extend({}, defaults, options);
-        var promise = $.when();
-        this.each(function () {
-            var self = this;
-            promise = promise.then(function () {
-                return $.defer(function (el) {
-                    func.call(el);
-                }, options.breathTime, self);
-            });
-        });
-        return promise;
-    };
+	$.fn.gasp = function (func, options, promise) {
+		options = $.extend({}, defaults, options);
+		promise = promise || $.when();
+		this.each(function () {
+			var self = this;
+			promise = promise.then(function () {
+				return $.defer(function (el) {
+					func.call(el);
+				}, options.breathTime, self);
+			});
+		});
+		return promise;
+	};
 })(jQuery);
