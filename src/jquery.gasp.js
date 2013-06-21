@@ -1,6 +1,6 @@
 ;(function($) {
 	var slice = Array.prototype.slice;
-	$.defer = function( /*[func] [, delay] [, funcParameters]*/) {
+	$.whereas = function( /*[func] [, delay] [, funcParameters]*/) {
 		var args = arguments,
 		    isFunc = $.isFunction(args[0]),
 		    func = isFunc ? args[0] : $.noop,
@@ -46,7 +46,7 @@
 		this.each(function () {
 			var self = this;
 			promise = promise.then(function () {
-				var p = $.defer(function (el) {
+				var p = $.whereas(function (el) {
 					func.call(el);
 				}, (isFirst? options.wait : options.breathTime), self);
 				isFirst = false;
