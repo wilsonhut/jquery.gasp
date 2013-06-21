@@ -1,0 +1,36 @@
+{
+    "name": "gasp",
+    "title": "jQuery Gasp",
+    "description": "Give some breathing room to your long-running plugins, like $('...').logRunningPlugin",
+    "keywords": [
+        "deferred",
+        "promise",
+        "setTimeout",
+        "each"
+    ],
+    "version": "1.0.0",
+    "author": {
+        "name": "wilsonhut",
+        "url": "http://wilsonhut.wordpress.com/2013/06/13/introducing-jquery-gasp-give-a-little-breathing-room-to-your-browser-intensive-jquery/"
+    },
+    "maintainers": [
+        {
+            "name": "Philip C Wilson",
+            "email": "gasp@wilsonhut.com",
+            "url": "http://wilsonhut.wordpress.com/"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://raw.github.com/wilsonhut/jquery.gasp/master/LICENSE"
+        }
+    ],
+    "bugs": "https://github.com/wilsonhut/jquery.gasp/issues",
+    "homepage": "https://github.com/wilsonhut/jquery.gasp",
+    "docs": "https://github.com/wilsonhut/jquery.gasp",
+    "download": "https://raw.github.com/wilsonhut/jquery.gasp/master/src/jquery.gasp.js",
+    "dependencies": {
+        "jquery": ">=1.8"
+    }
+}
