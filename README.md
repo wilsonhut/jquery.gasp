@@ -17,7 +17,7 @@ Include my gasp plug-in, and replace that code above with the following, and you
   $(this).someBigNastyPlugin();
 });</pre>
 
-Essentially, it's like jquery's <em>.each</em> function, but it puts a setTimeout around each one, and chains them together, one after the other. If you saw <a href="http://wilsonhut.wordpress.com/2013/05/30/jquery-deferred-ified-window-settimeout/" title="jQuery Deferred-ified window.setTimeout">my defer plug-in</a>, this will make more sense.
+Essentially, it's like jquery's <em>.each</em> function, but it puts a setTimeout around each one, and chains them together, one after the other. If you saw <a href="http://wilsonhut.wordpress.com/2013/05/30/jquery-deferred-ified-window-settimeout/" title="jQuery Deferred-ified window.setTimeout">my whereas plug-in</a>, this will make more sense.
 
 Now this is asyncronous, but it returns a promise, so you have to treat it accordingly:
 
@@ -31,4 +31,4 @@ $("td").gasp(function(){
 console.log("This will run before the gasping is finished");
 </pre>
 
-The code includes the jquery.defer code. Just seemed easier (for you) that way.
+The code includes the jquery.whereas code. Just seemed easier (for you) that way.
