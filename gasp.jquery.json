@@ -1,7 +1,7 @@
 {
     "name": "gasp",
     "title": "jQuery Gasp",
-    "description": "Give some breathing room to your long-running plugins, $('.many').fatPlugin() becomes $('.many'),gasp(function(){$(this).fatPlugin();}). It returns a promise.",
+    "description": "Give some breathing room to your long-running plugins, $('.many').fatPlugin() becomes $('.many').gasp(function(){$(this).fatPlugin();}). It returns a promise.",
     "keywords": [
         "deferred",
         "promise",
