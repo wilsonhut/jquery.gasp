@@ -8,7 +8,7 @@
         "setTimeout",
         "each"
     ],
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": {
         "name": "Philip C Wilson",
         "url": "http://wilsonhut.wordpress.com/2013/06/13/introducing-jquery-gasp-give-a-little-breathing-room-to-your-browser-intensive-jquery/"
